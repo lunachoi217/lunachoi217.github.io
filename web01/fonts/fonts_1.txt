@@ -1,0 +1,11 @@
+NotoSansKR-VariableFont_wght.ttf
+첨부파일5(WAGURI TTF).ttf
+NotoSansKR-Black.ttf
+NotoSansKR-Bold.ttf
+NotoSansKR-ExtraBold.ttf
+NotoSansKR-ExtraLight.ttf
+NotoSansKR-Light.ttf
+NotoSansKR-Medium.ttf
+NotoSansKR-Regular.ttf
+NotoSansKR-SemiBold.ttf
+NotoSansKR-Thin.ttf
