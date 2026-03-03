@@ -57,10 +57,109 @@
     .base_color div { background-color: #3C41A6; }
     .point_color div { background-color: #0D0D0D; }
     </style>
-    <link rel="stylesheet" href="main.css">  <!--페이지1-->
-    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
     <link rel="stylesheet" href="responsive.css">
-</head>
+    <style>
+    #lnb {
+        min-height:150vh;
+    }
+
+    #vs1 {
+        background-image: url("./images/bg_member_1.jpg");
+        background-size: cover;
+    }   
+
+    .vs_tit {
+        color:#ffffff;
+    }
+
+    .vs_sub_tit {
+        color: #ffffff;
+    }
+
+    .page_tit_box {
+        border-top:1px solid #bbb;
+        border-right: 1px solid #bbb;
+    }
+
+    .sec_tit {
+        font-size: 20px;
+    }
+
+    .form_wrap {
+        width: 960px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .form1 {
+        clear:both;
+    }
+
+    .form_con {
+        width: 900px;
+        background-color: #ececec;
+        padding: 24px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        height: 900px;
+        overflow-y: auto;
+    }
+
+    .cate_tit {
+        font-size: 18px;
+    }
+
+    .txt_ctrl {
+        display:block;
+        width: 80%;
+        line-height: 48px;
+        margin-bottom: 32px;
+        padding-left: 14px;
+    }
+
+    .btn_con {
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .btn_ctrl {
+        display: block;
+        border-radius: 8px;
+        line-height: 36px;
+        background-color: #0b1d3f;
+        color: #fff;
+        text-align: center;
+        border: none;
+        outline: none;
+        padding: 0 14px;
+        cursor: pointer;
+        padding-left: 28px;
+        background-position: 10px center;
+        background-repeat: no-repeat;
+    }
+
+    .btn_ctrl.login {
+        padding-left: 20px;
+    }
+
+    .btn_ctrl.join {
+        background-image: url("./images/login-icon-mem.png");
+    }
+
+    .btn_ctrl.find {
+        background-image: url("./images/login-icon-search.png");
+    }
+
+    .check_group {
+        clear: both;
+        height: 90px;
+        line-height: 40px;
+    }
+    </style>
+    </head>
 <body> <!--div.wrap>header#hd+main.content+footer#ft-->
 <div class="wrap">
     <header id="hd"> <!--div.container>(a.logo>img)+(nav.gnb>ul.menu>li*5>a{메인$}+(ul.sub>li*5>a{서브$$}))+(nav.tnb>a{상단$}*3)-->
@@ -127,190 +226,88 @@
         </div>
     </header>
     <main class="content">
-        <!--figure#vs>ul.img_box>li3>img+(div.tit_box>h3+a{자세히보기})-->
-        <figure id="vs">
-            <input type="radio" id="ra1" class="ra" name="ra" checked>
-            <input type="radio" id="ra2" class="ra" name="ra">
-            <input type="radio" id="ra3" class="ra" name="ra">
-            <input type="radio" id="ra4" class="ra" name="ra">
-            <ul class="img_box">
-                <li>
-                    <img src="./images/vs01.jpg" alt="동구릉">
-                    <div class="tit_box">
-                        <h3>동구릉</h3>
-                        <a href="sub31.html">구리1경</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/vs02.png" alt="장자호수공원">
-                    <div class="tit_box">
-                        <h3>장자호수공원</h3>
-                        <a href="sub31.html">구리2경</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/vs03.jpg" alt="아차산&고구려대장간마을">
-                    <div class="tit_box">
-                        <h3>광개토태왕비&동상</h3>
-                        <a href="sub31.html">구리3경</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/vs04.jpg" alt="갈매구릉산자락길(무장애나눔길)">
-                    <div class="tit_box">
-                        <h3>갈매구릉산자락길</h3>
-                        <a href="sub31.html">구리4경</a>
-                    </div>
-                </li>
-            </ul>
-            <div class="btn_box">
-                <ul class="btn_wrap">
-                    <li><label for="ra1" class="vs_btn" id="vs_btn1"></label></li>
-                    <li><label for="ra2" class="vs_btn" id="vs_btn2"></label></li>
-                    <li><label for="ra3" class="vs_btn" id="vs_btn3"></label></li>
-                    <li><label for="ra4" class="vs_btn" id="vs_btn4"></label></li>
-                </ul>
-            </div>
+        <figure id="vs1">
+            <h2 class="vs_tit">구리시 관광문화</h2>
+            <h4 class="vs_sub_tit">- 이용안내 -</h4>
         </figure>
-        <style>
-        
-        </style>
-        <!-- section.page#page$3>div.page_wrap>h2.page_title{페이지제목$} -->
-        <section class="page" id="page1"> 
-            <!-- before -->
-            <div class="page_wrap">
-                <h3 class="page_title">역사문화의 도시 구리의 <span class="txt_color">주요명소</span></h3>    
-                <div class="page_grid">
-                    <div class="row1">
-                        <figure id="s_thumb1" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row01_1.png" alt="구리시가족캠핑장">
-                                <div class="thumb_content">
-                                    <h5 class="tit1">#가족캠핑장</h5>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure id="s_thumb2" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row02_1.png" alt="장자호수생태체험관">
-                                <div class="thumb_content">
-                                    <h5 class="tit2">#장자호수생태체험관</h5>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure id="s_thumb3" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row03_1.png" alt="구리 둘레길">
-                                <div class="thumb_content">
-                                    <h5 class="tit3">#구리 둘레길</h5>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="row2">
-                        <figure id="s_thumb4" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row04_1.png" alt="왕숙천 생태습지">
-                                <div class="thumb_content">
-                                    <h5 class="tit4">#왕숙천 생태습지</h5>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure id="s_thumb5" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row05_1.png" alt="문화예술">
-                                <div class="thumb_content">
-                                    <h5 class="tit5">#문화예술</h5>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure id="s_thumb6" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row06_1.png" alt="이문안 호수공원">
-                                <div class="thumb_content">
-                                    <h5 class="tit6">#이문안 호수공원</h5>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
+        <div class="content_wrap">
+            <aside id="left_bar">
+                <div class="lnb_tit_box">
+                    <h3 class="lnb_tit">이용안내</h3>
                 </div>
-            </div>
-    
-        </section>
-        <section class="page" id="page2">
-            <div class="page_wrap">
-                <h2 class="page_title">구리시의 ALL 소식</h2>
-                <div class="page_grid2">
-                    <div class="row3">
-                        <div class="movie_wrap" id="movie_wrap1">
-                            <div class="col span" id="movie1">
-                                <a href="" class="movie" title="새 창 열림"></a>
-                            </div>
-                        </div>
-                        <div class="movie_wrap" id="movie_wrap2">
-                            <ul class="movie_lst">
-                                <li class="col" id="movie2"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie3"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie4"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie5"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie6"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie7"><a href="" class="movie" title="새 창 열림"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row4">
-                        <h4 class="box_tit">자주 찾는 메뉴</h4>
-                        <ul class="box_lst">
-                            <li class="box_item" id="box_item1">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">관광홍보물</h5>
-                                </a>
-                            </li>
-
-                            <li class="box_item" id="box_item2">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">문화관광해설사</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item3">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">공공와이파이존</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item4">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">숙박시설</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item5">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">모범음식점</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item6">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">관광VR</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item7">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">관광홍보영상</h5>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <nav id="lnb">
+                    <ul>
+                        <li><a href="log.html">로그인</a></li>
+                        <li><a href="member.html">회원가입</a></li>
+                        <li><a href="promotion.html" class="active">회원약관</a></li>
+                        <li><a href="privacy.html">개인정보처리방침</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="content_art">
+                <div class="page_tit_box">
+                    <h3 class="page_tit">로그인</h3>
+                    <p class="breadcrumb"><a href="/">HOME</a> &gt; 
+                        <span>이용안내</span>
+                    &gt; <span>회원약관</span></p>
                 </div>
+                <section class="con">
+                    <div class="form_wrap">
+                        <h3 class="sec_tit">회원약관</h3>
+                        <form action="" id="agree_form" class="form1">
+                            <div class="form_con">
+                                <h4 class="cate_tit"><strong>제1조 (목적)</strong></h4>
+                                <p class="cate_con">본 약관은 [회사명] (이하 “회사”)가 제공하는 [서비스명] 및 관련 제반 서비스의 이용과 관련하여 회사와 회원 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+                                <h4 class="cate_tit"><strong>제2조 (정의)</strong></h4>
+                                <p class="cate_con">1. “서비스”라 함은 회사가 제공하는 모든 온라인 및 모바일 기반 서비스를 의미합니다.<br>
+                                2. “회원”이라 함은 본 약관에 동의하고 회원가입을 완료한 자를 말합니다.<br>
+                                3. “아이디(ID)”라 함은 회원 식별과 서비스 이용을 위하여 회원이 정하고 회사가 승인한 문자 또는 숫자의 조합을 말합니다.<br>
+                                4. “비밀번호”라 함은 회원 본인 확인을 위해 회원이 설정한 문자, 숫자, 특수문자의 조합을 말합니다.<br></p>
+                                <h4 class="cate_tit"><strong>제3조 (약관의 효력 및 변경)</strong></h4>
+                                <p class="cate_con">
+                                    1. 본 약관은 서비스 화면에 게시하거나 기타 방법으로 공지함으로써 효력을 발생합니다.<br>
+                                    2. 회사는 관련 법령을 위배하지 않는 범위에서 본 약관을 변경할 수 있습니다.<br>
+                                    3. 약관이 변경될 경우 회사는 변경 내용과 시행일자를 명시하여 사전에 공지합니다.<br>
+                                </p>
+                                <h4 class="cate_tit"><strong>제4조 (회원가입)</strong></h4>
+                                <p class="cate_con">
+                                    1. 회원가입은 이용자가 약관에 동의하고 회사가 정한 가입 양식에 따라 정보를 입력함으로써 이루어집니다.<br>
+                                    2. 회사는 다음 각 호에 해당하는 경우 회원가입을 거부할 수 있습니다.<br>
+                                    - 허위 정보를 기재한 경우<br>
+                                    - 타인의 명의를 도용한 경우<br>
+                                    - 기타 회사가 정한 요건을 충족하지 못한 경우<br>
+                                </p>
+                                <h4 class="cate_tit"><strong>제5조 (회원의 의무)</strong></h4>
+                                <p class="cate_con">
+                                    회원은 다음 행위를 하여서는 안 됩니다.<br>
+                                    1. 타인의 개인정보를 도용하는 행위<br>
+                                    2. 서비스 운영을 방해하는 행위<br>
+                                    3. 법령 또는 공서양속에 반하는 행위<br>
+                                    4. 회사 및 제3자의 권리를 침해하는 행위<br>
+                                </p>
+                                <h4 class="cate_tit"><strong>제6조 (서비스 이용 제한)</strong></h4>
+                                <p class="cate_con">
+                                    회사는 회원이 본 약관을 위반할 경우 사전 통보 없이 서비스 이용을 제한하거나 회원 자격을 상실시킬 수 있습니다.<br>
+                                </p>
+                                <h4 class="cate_tit"><strong>제7조 (계약 해지 및 탈퇴)</strong></h4>
+                                <p class="cate_con">
+                                    회원은 언제든지 서비스 내 회원탈퇴 기능을 통해 이용계약을 해지할 수 있습니다.<br>
+                                </p>
+                                <h4 class="cate_tit"><strong>제8조 (면책조항)</strong></h4>
+                                <p class="cate_con">
+                                    회사는 천재지변, 시스템 장애 등 불가항력적인 사유로 인한 서비스 중단에 대해 책임을 지지 않습니다.<br>
+                                </p>
+                                <h4 class="cate_tit"><strong>제9조 (준거법 및 관할법원)</strong></h4>
+                                <p class="cate_con">
+                                    본 약관은 대한민국 법을 준거법으로 하며, 분쟁 발생 시 회사의 본점 소재지를 관할하는 법원을 전속 관할법원으로 합니다.</p>
+                                </p>
+                            </div>    
+                        </form>
+                    </div>
+                </section>
             </div>
-            <!-- after -->
-        </section>
-    </main>
+        </div>
+    </main>   
     <footer id="ft">
         <div class="container">
             <nav id="relation">

@@ -41,7 +41,6 @@
     p.black {font-family: 'Paper', sans-serif; font-weight: 400;}
     p.light {font-family: 'Paper', sans-serif; font-weight: 300;}
     </style>
-    <link rel="stylesheet" href="common.css">
    <style>
     ul { list-style: none; }
     .icon_list { clear:both; width: 1200px; margin: 0 auto; }
@@ -57,8 +56,8 @@
     .base_color div { background-color: #3C41A6; }
     .point_color div { background-color: #0D0D0D; }
     </style>
-    <link rel="stylesheet" href="main.css">  <!--페이지1-->
-    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub_common.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body> <!--div.wrap>header#hd+main.content+footer#ft-->
@@ -127,190 +126,13 @@
         </div>
     </header>
     <main class="content">
-        <!--figure#vs>ul.img_box>li3>img+(div.tit_box>h3+a{자세히보기})-->
-        <figure id="vs">
-            <input type="radio" id="ra1" class="ra" name="ra" checked>
-            <input type="radio" id="ra2" class="ra" name="ra">
-            <input type="radio" id="ra3" class="ra" name="ra">
-            <input type="radio" id="ra4" class="ra" name="ra">
-            <ul class="img_box">
-                <li>
-                    <img src="./images/vs01.jpg" alt="동구릉">
-                    <div class="tit_box">
-                        <h3>동구릉</h3>
-                        <a href="sub31.html">구리1경</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/vs02.png" alt="장자호수공원">
-                    <div class="tit_box">
-                        <h3>장자호수공원</h3>
-                        <a href="sub31.html">구리2경</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/vs03.jpg" alt="아차산&고구려대장간마을">
-                    <div class="tit_box">
-                        <h3>광개토태왕비&동상</h3>
-                        <a href="sub31.html">구리3경</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/vs04.jpg" alt="갈매구릉산자락길(무장애나눔길)">
-                    <div class="tit_box">
-                        <h3>갈매구릉산자락길</h3>
-                        <a href="sub31.html">구리4경</a>
-                    </div>
-                </li>
-            </ul>
-            <div class="btn_box">
-                <ul class="btn_wrap">
-                    <li><label for="ra1" class="vs_btn" id="vs_btn1"></label></li>
-                    <li><label for="ra2" class="vs_btn" id="vs_btn2"></label></li>
-                    <li><label for="ra3" class="vs_btn" id="vs_btn3"></label></li>
-                    <li><label for="ra4" class="vs_btn" id="vs_btn4"></label></li>
-                </ul>
-            </div>
-        </figure>
-        <style>
-        
-        </style>
-        <!-- section.page#page$3>div.page_wrap>h2.page_title{페이지제목$} -->
-        <section class="page" id="page1"> 
-            <!-- before -->
-            <div class="page_wrap">
-                <h3 class="page_title">역사문화의 도시 구리의 <span class="txt_color">주요명소</span></h3>    
-                <div class="page_grid">
-                    <div class="row1">
-                        <figure id="s_thumb1" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row01_1.png" alt="구리시가족캠핑장">
-                                <div class="thumb_content">
-                                    <h5 class="tit1">#가족캠핑장</h5>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure id="s_thumb2" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row02_1.png" alt="장자호수생태체험관">
-                                <div class="thumb_content">
-                                    <h5 class="tit2">#장자호수생태체험관</h5>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure id="s_thumb3" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row03_1.png" alt="구리 둘레길">
-                                <div class="thumb_content">
-                                    <h5 class="tit3">#구리 둘레길</h5>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="row2">
-                        <figure id="s_thumb4" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row04_1.png" alt="왕숙천 생태습지">
-                                <div class="thumb_content">
-                                    <h5 class="tit4">#왕숙천 생태습지</h5>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure id="s_thumb5" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row05_1.png" alt="문화예술">
-                                <div class="thumb_content">
-                                    <h5 class="tit5">#문화예술</h5>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure id="s_thumb6" class="s_thumb">
-                            <a href="">
-                                <img src="./images/row06_1.png" alt="이문안 호수공원">
-                                <div class="thumb_content">
-                                    <h5 class="tit6">#이문안 호수공원</h5>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-    
-        </section>
-        <section class="page" id="page2">
-            <div class="page_wrap">
-                <h2 class="page_title">구리시의 ALL 소식</h2>
-                <div class="page_grid2">
-                    <div class="row3">
-                        <div class="movie_wrap" id="movie_wrap1">
-                            <div class="col span" id="movie1">
-                                <a href="" class="movie" title="새 창 열림"></a>
-                            </div>
-                        </div>
-                        <div class="movie_wrap" id="movie_wrap2">
-                            <ul class="movie_lst">
-                                <li class="col" id="movie2"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie3"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie4"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie5"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie6"><a href="" class="movie" title="새 창 열림"></a></li>
-                                <li class="col" id="movie7"><a href="" class="movie" title="새 창 열림"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row4">
-                        <h4 class="box_tit">자주 찾는 메뉴</h4>
-                        <ul class="box_lst">
-                            <li class="box_item" id="box_item1">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">관광홍보물</h5>
-                                </a>
-                            </li>
 
-                            <li class="box_item" id="box_item2">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">문화관광해설사</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item3">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">공공와이파이존</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item4">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">숙박시설</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item5">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">모범음식점</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item6">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">관광VR</h5>
-                                </a>
-                            </li>
-                            <li class="box_item" id="box_item7">
-                                <a href="">
-                                    <div class="box_img"></div>
-                                    <h5 class="box_item_tit">관광홍보영상</h5>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- after -->
-        </section>
+
+
     </main>
+
+
+
     <footer id="ft">
         <div class="container">
             <nav id="relation">

@@ -2,46 +2,53 @@
 
 * {box-sizing: border-box; }
 body {
-    font-family: 'Waguri', sans-serif;
-    font-weight: 200; overflow-x: hidden;
+    font-family: 'Paper', sans-serif;
+    font-weight: 500; overflow-x: hidden;
     border-bottom: 1px solid #ddd;
 }
-a {text-decoration: none; color: #333; }
+
+a {font-family: 'Paper', sans-serif;
+    font-weight: 500; text-decoration: none;
+    color: #333; position: center;
+    font-size: 18px;
+}
 
 .wrap {width: 100%; min-width: 320px; }
 
 .container {
-    width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
-a {
-    font-weight: 80; font-size: 20px;
-    position: center;
-}
+
 
 #hd { /*아주 얇은 줄이 생김*/
     border-bottom: 1px solid #ddd;
 }
+
 #hd .container { /*헤더에 있는 것들 위치 잡기*/
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .tnb a{ /*로그인 폰트 크기, 거리, 마우스 올렸을 때 색깔*/
-    font-family: 'Paper'; font-size: 18px;
+    font-family: 'Paper'; font-size: 22px;
     padding: 4px 5px; color: rgb(97, 97, 97);
-    font-weight: 300;
+    font-weight: 400;
 }
+
 .tnb a:hover{ /*마우스 밑줄*/
     color: rgb(8, 10, 8); min-width: 140px; text-decoration: underline;
 }
+
 .logo img {  /*로고 크기*/
     height: 60px;
     width: auto;
     margin-top: 12px;
     margin-bottom: 12px;
 }
+
 .gnb:before { /*헤더 전체 내려오는 것*/
     content: "";
     display:block;
@@ -52,7 +59,7 @@ a {
     position:absolute;
     z-index:90;
     left: 0; 
-    top: 89px;
+    top: 88px;
     border-bottom: 2px solid #999;
     transition: 0.5s;
 }
